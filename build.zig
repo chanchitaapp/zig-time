@@ -1,11 +1,13 @@
 const std = @import("std");
-const deps = @import("./deps.zig");
 
 pub fn build(b: *std.Build) void {
     const t = b.addTest(.{
-        .root_source_file = .{ .path = "main.zig" },
+        .root_source_file = b.path("main.zig"),
     });
-    deps.addAllTo(t);
+
+    const extras = b.dependency("extras", .{});
+
+    t.root_module.addImport("extras", extras.module("extras"));
 
     const run_t = b.addRunArtifact(t);
 

@@ -1,6 +1,6 @@
 const std = @import("std");
 const string = []const u8;
-const time = @import("time");
+const time = @import("./time.zig");
 
 pub fn main() !void {
     std.log.info("All your codebase are belong to us.", .{});

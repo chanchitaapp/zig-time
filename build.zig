@@ -13,6 +13,8 @@ pub fn build(b: *std.Build) void {
     const target = b.standardTargetOptions(.{});
     const optimize = b.standardOptimizeOption(.{});
 
+    _ = b.addModule("time", .{ .root_source_file = b.path("time.zig"), .target = target, .optimize = optimize});
+
     const extras = b.dependency("extras", .{
         .target = target,
         .optimize = optimize,

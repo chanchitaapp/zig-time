@@ -7,8 +7,8 @@
 
     .dependencies = .{
         .extras = .{
-            .url = "git+https://github.com/chanchitaapp/zig-extras?ref=master#6fefd5da3d601d32b7f853bec4d8092845e43948",
-            .hash = "12204b41a51928b36468e67950b8e23276763ca94c4e5e6a19b2691004fda710c229",
+            .url = "git+https://github.com/chanchitaapp/zig-extras?ref=master#90c18700180c63715efafe8c8507fc7c1d8134b2",
+            .hash = "122040b998a097be6119fd007e5a93fd539f55dfb174d7d458c988b18afea6850eb7",
         },
     },
 
